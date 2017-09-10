@@ -1,0 +1,60 @@
+/* Universal styles */
+
+@font-face {
+	font-family: HojasPlata;
+	src: url('../fonts/Hojas-Plata.otf');
+}
+
+body {
+	font-family: HojasPlata;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-size: 16px;
+
+}
+
+.wrapper {
+	width: 70%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+/* Header styles */
+
+header h1 {
+	margin: 0;
+	padding: 0.6em 0;
+	display: inline-block;
+	float: left;
+	font-size: 3em;
+}
+
+header h1 a {
+	text-decoration: none;
+	color: green;
+}
+
+nav {
+	float: right;
+}
+
+li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 1em;
+	margin-top: 2em;
+	font-weight: bold;
+
+}
+
+li a {
+	text-decoration: none;
+	color: darkgreen;
+	font-size: 1.4em;
+	padding: 0.3em;
+}
+
+li a:hover {
+	border: 1px solid darkgreen;
+}
