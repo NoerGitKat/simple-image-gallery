@@ -23,10 +23,14 @@ body {
 
 /* Header styles */
 
+header {
+	padding: 0;
+}
+
 header h1 {
 	font-family: HojasPlata;
-	margin: 0;
-	padding: 0.6em 0;
+	margin: 0 auto;
+	padding: 0.8em 0 0;
 	display: inline-block;
 	float: left;
 	font-size: 3em;
@@ -55,6 +59,7 @@ li a {
 	color: darkgreen;
 	font-size: 1.4em;
 	padding: 0.3em;
+	cursor: pointer;
 }
 
 li a:hover {
@@ -71,6 +76,10 @@ main {
 	clear: both;
 	width: 100%;
 	text-align: center;
+}
+
+main h2 {
+	margin: 1em 0;
 }
 
 main img {
@@ -92,3 +101,139 @@ footer h4 {
 	font-family: Times, serif
 }
 
+/* Images styles */
+
+.img-container img {
+	width: 49%;
+	margin: 0.1em;
+	opacity: 0.85;
+	transition: 0.75s;
+}
+
+.img-container img:hover {
+	opacity: 1;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 480px) {
+	.active {
+		color: white;
+		border: none;
+	}
+
+	li a:hover {
+		border: none;
+	}
+
+	header h1 {
+		float: none;
+		padding: 0;
+		font-size: 2.65em;
+		text-align: center;
+		margin: 1em 0 0.1em;
+		padding: 0;
+	}
+
+	ul {
+		padding: 0;
+	}
+
+	nav {
+		float: none;
+		text-align: center;
+	}
+
+	li {
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		display: inline-block;
+		font-size: 1em;
+		background-color: #a9e5ab;
+	}
+
+	main img {
+		width: 100%;
+		margin-top: 1.5em;
+	}
+
+	.img-container img {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	.active {
+		color: white;
+		border: none;
+	}
+
+	li a:hover {
+		border: none;
+	}
+
+	header {
+		width: 100%;
+	}
+
+	header h1 {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 0.25em;
+	}
+
+	nav {
+		float: none;
+		text-align: center;
+	}
+
+	ul {
+		padding: 0;
+	}
+
+	ul li {
+		clear: both;
+		width: 100%;
+		margin: 0 auto;
+		display: inline-block;
+		background-color: #a9e5ab;
+		font-size: 1em;
+	}
+
+	main h2 {
+		margin: 1em 0;
+	}
+
+	main img {
+		margin: 2em 0;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	.active {
+		border-bottom: 1px solid darkgreen;
+	}
+
+	.wrapper {
+		text-align: center;
+	}
+
+	header {
+		width: 100%;
+	}	
+
+	header h1 {
+		float: none;
+		margin: 0 auto;
+	}
+
+	nav {
+		float: none;
+		display: inline-block;
+	}
+
+	main h2 {
+		margin: 0 0 1em;
+	}
+}
