@@ -1,0 +1,1 @@
+This is a small Image Gallery, showcasing various nature photos. It's a simple project made solely with HTML and CSS. Its purpose is to refine my responsive web design capabilities. I made use of the template engine Pug and framework Express.js to host it locally. 
